@@ -16,6 +16,7 @@
 		AC33549C279FA20000F9786F /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33549B279FA20000F9786F /* MarvelAppTests.swift */; };
 		AC3354A6279FA20000F9786F /* MarvelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3354A5279FA20000F9786F /* MarvelAppUITests.swift */; };
 		AC3354A8279FA20000F9786F /* MarvelAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3354A7279FA20000F9786F /* MarvelAppUITestsLaunchTests.swift */; };
+		AC3354B6279FA27700F9786F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC3354B5279FA27700F9786F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC3354B6279FA27700F9786F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = MarvelApp;
+			packageProductDependencies = (
+				AC3354B5279FA27700F9786F /* SnapKit */,
+			);
 			productName = MarvelApp;
 			productReference = AC335481279FA1FE00F9786F /* MarvelApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = AC335478279FA1FE00F9786F;
+			packageReferences = (
+				AC3354B4279FA27700F9786F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = AC335482279FA1FE00F9786F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -624,6 +632,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC3354B4279FA27700F9786F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC3354B5279FA27700F9786F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC3354B4279FA27700F9786F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC335479279FA1FE00F9786F /* Project object */;
 }
