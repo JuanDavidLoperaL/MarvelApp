@@ -36,6 +36,25 @@
 		AC3354F9279FA59200F9786F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3354F8279FA59200F9786F /* UILabelExtension.swift */; };
 		AC3354FC279FA5B900F9786F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3354FB279FA5B900F9786F /* UIViewExtension.swift */; };
 		AC3354FF279FA5DA00F9786F /* ViewConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3354FE279FA5DA00F9786F /* ViewConfigurationProtocol.swift */; };
+		AC335504279FAE1A00F9786F /* HomeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC335503279FAE1A00F9786F /* HomeAPI.swift */; };
+		AC335507279FAE4F00F9786F /* EnvironmentURLHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC335506279FAE4F00F9786F /* EnvironmentURLHandler.swift */; };
+		AC33550D27A0348D00F9786F /* HomeBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33550C27A0348D00F9786F /* HomeBaseView.swift */; };
+		AC33551027A036C500F9786F /* HomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33550F27A036C500F9786F /* HomeText.swift */; };
+		AC33551227A036CF00F9786F /* AppText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551127A036CF00F9786F /* AppText.swift */; };
+		AC33551527A0384B00F9786F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551427A0384B00F9786F /* HomeViewController.swift */; };
+		AC33551827A039DB00F9786F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551727A039DB00F9786F /* HomeViewModel.swift */; };
+		AC33551B27A0480100F9786F /* Marvel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551A27A0480100F9786F /* Marvel.swift */; };
+		AC33551D27A0490900F9786F /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551C27A0490900F9786F /* Information.swift */; };
+		AC33551F27A04BE300F9786F /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33551E27A04BE300F9786F /* Characters.swift */; };
+		AC33552127A04F7A00F9786F /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552027A04F7A00F9786F /* Thumbnail.swift */; };
+		AC33552327A04FA900F9786F /* ImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552227A04FA900F9786F /* ImageType.swift */; };
+		AC33552527A0500B00F9786F /* Comics.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552427A0500B00F9786F /* Comics.swift */; };
+		AC33552827A054E800F9786F /* MarvelConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552727A054E800F9786F /* MarvelConfig.swift */; };
+		AC33552B27A057D000F9786F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552A27A057D000F9786F /* AppCoordinator.swift */; };
+		AC33552E27A05CF000F9786F /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33552D27A05CF000F9786F /* CharacterTableViewCell.swift */; };
+		AC33553127A08FCB00F9786F /* DatasourceMavelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33553027A08FCB00F9786F /* DatasourceMavelTableView.swift */; };
+		AC33553327A08FD200F9786F /* DelegateMavelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33553227A08FD200F9786F /* DelegateMavelTableView.swift */; };
+		AC33553627A0987600F9786F /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC33553527A0987600F9786F /* UIImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +134,26 @@
 		AC3354F8279FA59200F9786F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		AC3354FB279FA5B900F9786F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		AC3354FE279FA5DA00F9786F /* ViewConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurationProtocol.swift; sourceTree = "<group>"; };
+		AC335503279FAE1A00F9786F /* HomeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPI.swift; sourceTree = "<group>"; };
+		AC335506279FAE4F00F9786F /* EnvironmentURLHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentURLHandler.swift; sourceTree = "<group>"; };
+		AC335508279FAE7900F9786F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AC33550C27A0348D00F9786F /* HomeBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBaseView.swift; sourceTree = "<group>"; };
+		AC33550F27A036C500F9786F /* HomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeText.swift; sourceTree = "<group>"; };
+		AC33551127A036CF00F9786F /* AppText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppText.swift; sourceTree = "<group>"; };
+		AC33551427A0384B00F9786F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC33551727A039DB00F9786F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AC33551A27A0480100F9786F /* Marvel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvel.swift; sourceTree = "<group>"; };
+		AC33551C27A0490900F9786F /* Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		AC33551E27A04BE300F9786F /* Characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Characters.swift; sourceTree = "<group>"; };
+		AC33552027A04F7A00F9786F /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
+		AC33552227A04FA900F9786F /* ImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageType.swift; sourceTree = "<group>"; };
+		AC33552427A0500B00F9786F /* Comics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comics.swift; sourceTree = "<group>"; };
+		AC33552727A054E800F9786F /* MarvelConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelConfig.swift; sourceTree = "<group>"; };
+		AC33552A27A057D000F9786F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AC33552D27A05CF000F9786F /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		AC33553027A08FCB00F9786F /* DatasourceMavelTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceMavelTableView.swift; sourceTree = "<group>"; };
+		AC33553227A08FD200F9786F /* DelegateMavelTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateMavelTableView.swift; sourceTree = "<group>"; };
+		AC33553527A0987600F9786F /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +225,11 @@
 		AC335483279FA1FE00F9786F /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC33553427A0985E00F9786F /* Extension */,
+				AC33552927A057C700F9786F /* Coordinator */,
+				AC33552627A054DB00F9786F /* Utils */,
+				AC335505279FAE4500F9786F /* Environment */,
+				AC335500279FA64B00F9786F /* Home */,
 				AC335484279FA1FE00F9786F /* AppDelegate.swift */,
 				AC335486279FA1FE00F9786F /* SceneDelegate.swift */,
 				AC335488279FA1FE00F9786F /* ViewController.swift */,
@@ -237,6 +281,7 @@
 		AC3354D7279FA3F700F9786F /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				AC335508279FAE7900F9786F /* Info.plist */,
 				AC3354FD279FA5CF00F9786F /* Protocols */,
 				AC3354F6279FA58100F9786F /* Extension */,
 				AC3354EF279FA4B600F9786F /* Color */,
@@ -353,6 +398,124 @@
 				AC3354FE279FA5DA00F9786F /* ViewConfigurationProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		AC335500279FA64B00F9786F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC33551627A039D200F9786F /* ViewModel */,
+				AC33551327A0383D00F9786F /* ViewController */,
+				AC33550E27A036B600F9786F /* Resource */,
+				AC335509279FAEA400F9786F /* Model */,
+				AC335502279FAE1200F9786F /* API */,
+				AC335501279FA64F00F9786F /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC335501279FA64F00F9786F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC33552C27A05CDD00F9786F /* Cell */,
+				AC33550C27A0348D00F9786F /* HomeBaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC335502279FAE1200F9786F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AC335503279FAE1A00F9786F /* HomeAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AC335505279FAE4500F9786F /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				AC335506279FAE4F00F9786F /* EnvironmentURLHandler.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		AC335509279FAEA400F9786F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC33551A27A0480100F9786F /* Marvel.swift */,
+				AC33551C27A0490900F9786F /* Information.swift */,
+				AC33551E27A04BE300F9786F /* Characters.swift */,
+				AC33552027A04F7A00F9786F /* Thumbnail.swift */,
+				AC33552227A04FA900F9786F /* ImageType.swift */,
+				AC33552427A0500B00F9786F /* Comics.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC33550E27A036B600F9786F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AC33550F27A036C500F9786F /* HomeText.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		AC33551327A0383D00F9786F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC33552F27A08FA600F9786F /* DatasourceDelegateTableView */,
+				AC33551427A0384B00F9786F /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AC33551627A039D200F9786F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC33551727A039DB00F9786F /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC33552627A054DB00F9786F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AC33551127A036CF00F9786F /* AppText.swift */,
+				AC33552727A054E800F9786F /* MarvelConfig.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AC33552927A057C700F9786F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AC33552A27A057D000F9786F /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		AC33552C27A05CDD00F9786F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AC33552D27A05CF000F9786F /* CharacterTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		AC33552F27A08FA600F9786F /* DatasourceDelegateTableView */ = {
+			isa = PBXGroup;
+			children = (
+				AC33553027A08FCB00F9786F /* DatasourceMavelTableView.swift */,
+				AC33553227A08FD200F9786F /* DelegateMavelTableView.swift */,
+			);
+			path = DatasourceDelegateTableView;
+			sourceTree = "<group>";
+		};
+		AC33553427A0985E00F9786F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC33553527A0987600F9786F /* UIImageExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,8 +739,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC335489279FA1FE00F9786F /* ViewController.swift in Sources */,
+				AC335507279FAE4F00F9786F /* EnvironmentURLHandler.swift in Sources */,
 				AC335485279FA1FE00F9786F /* AppDelegate.swift in Sources */,
+				AC33551B27A0480100F9786F /* Marvel.swift in Sources */,
+				AC33553127A08FCB00F9786F /* DatasourceMavelTableView.swift in Sources */,
+				AC33551F27A04BE300F9786F /* Characters.swift in Sources */,
+				AC33552527A0500B00F9786F /* Comics.swift in Sources */,
+				AC33552B27A057D000F9786F /* AppCoordinator.swift in Sources */,
+				AC33553327A08FD200F9786F /* DelegateMavelTableView.swift in Sources */,
+				AC33551827A039DB00F9786F /* HomeViewModel.swift in Sources */,
+				AC33552127A04F7A00F9786F /* Thumbnail.swift in Sources */,
+				AC33552827A054E800F9786F /* MarvelConfig.swift in Sources */,
+				AC33552327A04FA900F9786F /* ImageType.swift in Sources */,
 				AC335487279FA1FE00F9786F /* SceneDelegate.swift in Sources */,
+				AC33552E27A05CF000F9786F /* CharacterTableViewCell.swift in Sources */,
+				AC33553627A0987600F9786F /* UIImageExtension.swift in Sources */,
+				AC33550D27A0348D00F9786F /* HomeBaseView.swift in Sources */,
+				AC33551D27A0490900F9786F /* Information.swift in Sources */,
+				AC33551527A0384B00F9786F /* HomeViewController.swift in Sources */,
+				AC33551027A036C500F9786F /* HomeText.swift in Sources */,
+				AC33551227A036CF00F9786F /* AppText.swift in Sources */,
+				AC335504279FAE1A00F9786F /* HomeAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,7 +902,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -775,7 +957,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -791,6 +973,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BaseURL = "https://gateway.marvel.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69845R2YL4;
@@ -798,7 +981,6 @@
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -810,7 +992,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -820,6 +1002,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BaseURL = "https://gateway.marvel.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 69845R2YL4;
@@ -827,7 +1010,6 @@
 				INFOPLIST_FILE = MarvelApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -839,7 +1021,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -962,10 +1144,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.APIManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -994,9 +1177,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.APIManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1005,6 +1189,7 @@
 		AC3354DE279FA3F700F9786F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BaseURL = "https://gateway.marvel.com";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1014,6 +1199,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesignSystem/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1025,10 +1211,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.DesignSystem;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1037,6 +1224,7 @@
 		AC3354DF279FA3F700F9786F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BaseURL = "https://gateway.marvel.com";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1046,6 +1234,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DesignSystem/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1057,9 +1246,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JuanCompany.DesignSystem;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
