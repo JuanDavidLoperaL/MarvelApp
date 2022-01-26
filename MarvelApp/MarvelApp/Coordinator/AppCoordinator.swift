@@ -24,5 +24,15 @@ final class AppCoordinator {
         navigationController.setViewControllers([viewController], animated: true)
         return navigationController
     }
+    
+    func navigateToDetail(with id: Int) {
+        let viewModel: DetailViewModel = DetailViewModel(characterId: id)
+        let viewController: DetailViewController = DetailViewController(coordinator: self, viewModel: viewModel)
+        navigationController.pushViewController(viewController, animated: true)
+    }
+    
+    func navigateToPreviousScreen() {
+        navigationController.popViewController(animated: true)
+    }
 }
 

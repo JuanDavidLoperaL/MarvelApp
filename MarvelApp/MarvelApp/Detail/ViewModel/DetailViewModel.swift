@@ -1,5 +1,5 @@
 //
-//  HomeViewModel.swift
+//  DetailViewModel.swift
 //  MarvelApp
 //
 //  Created by Juan David Lopera Lopez on 25/01/22.
@@ -8,13 +8,14 @@
 import APIManager
 import UIKit
 
-final class HomeViewModel {
+final class DetailViewModel {
     
     // MARK: - Typealias
-    typealias strings = AppText.Home
+    typealias strings = AppText.Detail
     
     // MARK: - Private Properties
-    private let api: HomeAPIProtocol
+    private let characterId: Int
+    private let api: DetailAPIProtocol
     private let downloadHundredPercent: CGFloat = 1.0
     private let downloadSixtyPercent: CGFloat = 0.6
     private let increaseDownloadInOnePercent: CGFloat = 0.01
@@ -23,40 +24,19 @@ final class HomeViewModel {
     private var marvelInfo: Marvel?
     private(set) var httpError: HttpError?
     
-    // MARK: - Internal Properties
-    var currentCell: Int = 0
-    var cellSelected: Int = 0 {
-        didSet {
-            guard let id: Int = marvelInfo?.information.results[cellSelected].id else {
-                return
-            }
-            delegate?.characterSelected(with: id)
-        }
-    }
-    
     // MARK: - Delegate
-    weak var delegate: HomeViewControllerDelegate?
+    weak var delegate: DetailViewControllerDelegate?
     
     // MARK: - Internal Init
-    init(api: HomeAPIProtocol = HomeAPI()) {
+    init(characterId: Int, api: DetailAPIProtocol = DetailAPI()) {
+        self.characterId = characterId
         self.api = api
     }
     
     // MARK: - Computed Properties
-    var numberOfRowInTable: Int {
-        guard let numberOrRows: Int = marvelInfo?.information.results.count else {
-            return 0
-        }
-        return numberOrRows
-    }
-    
-    var title: String {
-        return strings.title
-    }
-    
-    var information: (icon: URL, description: String, comics: String, series: String) {
-        guard let infoCharacter: Characters = marvelInfo?.information.results[currentCell], let icon: URL = URL(string: "\(infoCharacter.thumbnail.path).\(infoCharacter.thumbnail.imageType.rawValue)") else {
-            return (icon: URL(fileURLWithPath: String()), description: String(), comics: String(), series: String())
+    var information: (image: URL, name: String, description: String, event: String) {
+        guard let infoCharacter: Characters = marvelInfo?.information.results.first, let icon: URL = URL(string: "\(infoCharacter.thumbnail.path).\(infoCharacter.thumbnail.imageType.rawValue)") else {
+            return (image: URL(fileURLWithPath: String()), name: String(), description: String(), event: String())
         }
         var description: String = String()
         if infoCharacter.description.isEmpty {
@@ -64,16 +44,16 @@ final class HomeViewModel {
         } else {
         description = "\(strings.description)\n\(infoCharacter.description)"
         }
-        let comics: String = "\(strings.comics) \(infoCharacter.comics.available)"
-        let series: String = "\(strings.series) \(infoCharacter.series.available)"
-        return (icon: icon, description: description, comics: comics, series: series)
+        let name: String = infoCharacter.name
+        let event: String = "\(strings.event) \(infoCharacter.events.items.first?.name ?? String())"
+        return (image: icon, name: name, description: description, event: event)
     }
 }
 
 // MARK: - Internal Function
-extension HomeViewModel {
-    func getMarvelInfo(callback: @escaping(Bool) -> Void) {
-        api.getMarvelInfo { [weak self] result in
+extension DetailViewModel {
+    func getCharacterDetail(callback: @escaping(Bool) -> Void) {
+        api.getCharacterDetail(with: characterId) { [weak self] result in
             DispatchQueue.main.async {
                 self?.timer?.invalidate()
                 switch result {

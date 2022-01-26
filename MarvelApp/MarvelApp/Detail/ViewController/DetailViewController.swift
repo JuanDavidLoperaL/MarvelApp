@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  DetailViewController.swift
 //  MarvelApp
 //
 //  Created by Juan David Lopera Lopez on 25/01/22.
@@ -8,27 +8,25 @@
 import Foundation
 import UIKit
 
-protocol HomeViewControllerDelegate: AnyObject {
+protocol DetailViewControllerDelegate: AnyObject {
     func setValueInLoader(track: CGFloat)
     func informationLoadedWithSucess()
     func errorLoadingInformation()
-    func characterSelected(with id: Int)
 }
 
-final class HomeViewController: UIViewController {
+final class DetailViewController: UIViewController {
     
-    typealias screenText = AppText.Home
+    typealias screenText = AppText.Detail
     
     // MARK: - Private UI Properties
-    private let baseView: HomeBaseView = HomeBaseView()
+    private let baseView: DetailBaseView = DetailBaseView()
     
     // MARK: - Private Properties
     private let coordinator: AppCoordinator
-    private let viewModel: HomeViewModel
+    private let viewModel: DetailViewModel
     
     // MARK: - Internal Init
-    init(coordinator: AppCoordinator,
-         viewModel: HomeViewModel = HomeViewModel()) {
+    init(coordinator: AppCoordinator, viewModel: DetailViewModel) {
         self.coordinator = coordinator
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -47,40 +45,21 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = screenText.title
         viewModel.delegate = self
-        baseView.set(viewModel: viewModel)
         getInformation()
     }
 }
 
-// MARK: - WelcomeViewController Protocol Implementation
-extension HomeViewController: HomeViewControllerDelegate {
-    func setValueInLoader(track: CGFloat) {
-        baseView.showLoader(with: track)
-    }
-    
-    func informationLoadedWithSucess() {
-        baseView.loaderFinished(withError: false)
-    }
-    
-    func errorLoadingInformation() {
-        baseView.loaderFinished(withError: true)
-    }
-    
-    func characterSelected(with id: Int) {
-        coordinator.navigateToDetail(with: id)
-    }
-}
-
 // MARK: - Private Function
-private extension HomeViewController {
+private extension DetailViewController {
     func getInformation() {
         viewModel.startPercentLoader()
-        viewModel.getMarvelInfo { [weak self] result in
-            if result {
-                self?.baseView.reloadTableView()
-            } else {
+        viewModel.getCharacterDetail { [weak self] result in
+            if !result {
                 self?.showAlertError()
+            } else {
+                self?.baseView.set(viewModel: self?.viewModel ?? DetailViewModel(characterId: 0))
             }
         }
     }
@@ -92,10 +71,27 @@ private extension HomeViewController {
         let tryAgainAction: UIAlertAction = UIAlertAction(title: screenText.alertTryAgainAction, style: .default) { _ in
             self.getInformation()
         }
-        let cancelAction: UIAlertAction = UIAlertAction(title: screenText.alertCancelButton, style: .destructive, handler: nil)
+        let cancelAction: UIAlertAction = UIAlertAction(title: screenText.alertCancelButton, style: .destructive) { _ in
+            self.coordinator.navigateToPreviousScreen()
+        }
         [tryAgainAction, cancelAction].forEach { action in
             alert.addAction(action)
         }
         self.present(alert, animated: true, completion: nil)
+    }
+}
+
+// MARK: - WelcomeViewController Protocol Implementation
+extension DetailViewController: DetailViewControllerDelegate {
+    func setValueInLoader(track: CGFloat) {
+        baseView.showLoader(with: track)
+    }
+    
+    func informationLoadedWithSucess() {
+        baseView.loaderFinished(withError: false)
+    }
+    
+    func errorLoadingInformation() {
+        baseView.loaderFinished(withError: true)
     }
 }

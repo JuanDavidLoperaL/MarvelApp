@@ -9,4 +9,5 @@ import Foundation
 
 struct Comics: Decodable {
     let available: Int
+    let items: [CharacterItems]
 }
