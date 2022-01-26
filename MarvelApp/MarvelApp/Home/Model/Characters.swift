@@ -14,4 +14,5 @@ struct Characters: Decodable {
     let thumbnail: Thumbnail
     let comics: Comics
     let series: Comics
+    let events: Comics
 }
